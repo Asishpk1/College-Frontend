@@ -1,19 +1,25 @@
-import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='d-flex align-items-center justify-content-between p-4 px-5 shadow' style={{backgroundColor:'white'}}>
-        <h3 className='fw-bold' style={{color:'rgba(162, 2, 34, 1)'}}><i className="fa-solid fa-building-columns"></i> UNIPIX <span className='fw-normal fs-5'>UNIVERSITY</span></h3>
-        <div className='d-flex gap-5'>
-            <Link to={'/'} className='text-decoration-none text-dark' style={{fontWeight:'500'}}>Home</Link>
-            <Link to={'/courses'} className='text-decoration-none text-dark' style={{fontWeight:'500'}}>Academics</Link>
-        </div>
-        <div className='d-flex gap-5'>
-            <Link to={'/about'} className='text-decoration-none text-dark' style={{fontWeight:'500'}}>About</Link>
-            <Link to={'/contact'} className='text-decoration-none text-dark' style={{fontWeight:'500'}}>Contact</Link>
-        </div>
-    </div>
+    <>
+    <Navbar expand='lg' className='p-4 shadow' style={{backgroundColor:'white'}}>
+      <Container>
+        <Link to={'/'}  className='text-decoration-none'><Navbar.Brand style={{color:'rgba(162, 2, 34, 1)'}} className='fs-4 fw-bold'> <i className="fa-solid fa-building-columns"></i> UNIPIX <span className='fw-normal fs-5'>UNIVERSITY</span></Navbar.Brand></Link>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text className=' d-flex justify-content-center gap-sm-5 gap-2 flex-wrap' style={{fontWeight:'500'}}>
+            <Link to={'/'} className=' text-decoration-none text-dark highlight'>Home</Link>
+            <Link to={'/courses'} className=' text-decoration-none text-dark highlight'>Academics</Link>
+            <Link to={'/about'} className=' text-decoration-none text-dark highlight'>About</Link>
+            <Link to={'/contact'} className=' text-decoration-none text-dark highlight'>Contact</Link>
+          </Navbar.Text>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    </>
   )
 }
 

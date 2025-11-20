@@ -3,7 +3,7 @@ import React from 'react'
 const CourseDetails = () => {
     return (
         <>
-            <div className='p-5' style={{backgroundColor:'whitesmoke'}}>
+            <div className='p-md-5 p-3' style={{backgroundColor:'whitesmoke'}}>
                 <h1 className='' style={{ color: 'rgba(162, 2, 34, 1)' }}>American Literature</h1>
                 <hr />
                 <p>The American Literature course provides an in-depth exploration of the rich and diverse literary traditions of the United States, tracing their evolution from early colonial writings to the innovative, multifaceted voices of the contemporary era. The curriculum is designed for students who seek a deeper understanding of how America’s complex history, cultural shifts, and social transformations have shaped its literary identity over the centuries. Through a blend of textual analysis, historical study, and critical interpretation, this course examines how themes such as freedom, identity, race, gender, migration, and the American Dream have been represented, challenged, and reimagined by different generations of writers.

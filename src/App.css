@@ -3,3 +3,25 @@
   margin: 0;
   font-family: "Newsreader", serif;
 }
+
+@media(max-width:700px){
+  .main-head{
+    font-size: 30px !important;
+  }
+  .home-banner{
+    text-align: center;
+    align-items: center !important;
+  }
+  .sec-section{
+    text-align: center;
+  }
+  .third-section{
+    width: 100% !important;
+  }
+  .contact-photo{
+    width: 100% !important;
+  }
+  .contact-input{
+    width: 70% !important;
+  }
+}

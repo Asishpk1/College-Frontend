@@ -81,10 +81,10 @@ const Home = () => {
       <div className='container-fluid'>
 
         {/* First Section */}
-        <div className='row p-5 d-flex justify-content-between align-items-end' style={{ backgroundImage: `url(${homeImg})`, height: '640px', backgroundSize: 'cover', color: 'white', backgroundPosition: 'center' }}>
+        <div className='row p-sm-5 d-flex justify-content-between align-items-end home-banner' style={{ backgroundImage: `url(${homeImg})`, height: '640px', backgroundSize: 'cover', color: 'white', backgroundPosition: 'center' }}>
           <div className="col-md-6">
             <h5 className='mb-3'><i className="fa-solid fa-building-columns"></i> Knowledge meets innovation</h5>
-            <h1 style={{ fontSize: '58px' }}>Unleashing Potential Fostering Excellence</h1>
+            <h1 className='main-head' style={{ fontSize: '58px' }}>Unleashing Potential Fostering Excellence</h1>
             <Link to={'/courses'}><button className='btn text-light py-2 px-3 rounded-0' style={{ backgroundColor: 'rgba(162, 2, 34, 1)' }}>View Our Program <i className='fa-solid fa-arrow-right'></i></button></Link>
           </div>
           <div className="col-md-3">
@@ -99,20 +99,20 @@ const Home = () => {
         </div> <br />
 
         {/* Second Section */}
-        <div className='row d-flex justify-content-center align-items-center mt-5 pt-sm-5'>
-          <div className="col-md-5 d-flex gap-4">
+        <div className='row d-flex justify-content-center align-items-center gap-2 mt-5 pt-sm-5'>
+          <div className="col-md-5 d-flex gap-4 justify-content-center">
             <img src={sec1} alt="" style={{ width: '45%' }} />
             <img src={sec2} alt="" style={{ width: '45%' }} />
           </div>
-          <div className="col-md-5">
-            <h5 className='mb-3' style={{ color: 'rgba(162, 2, 34, 1)' }}><i className="fa-solid fa-building-columns"></i> Knowledge meets innovation</h5>
+          <div className="col-md-5 sec-section">
+            <h5 className='mb-3 mt-3 mt-md-0' style={{ color: 'rgba(162, 2, 34, 1)' }}><i className="fa-solid fa-building-columns"></i> Knowledge meets innovation</h5>
             <h1>About University</h1>
-            <p className='text-secondary'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, tenetur. Fugit atque vitae cupiditate ipsa eos a ipsam quia, minus amet voluptates voluptatum earum officia asperiores optio, consequuntur cum sit!</p>
-            <p className='text-secondary'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, tenetur. Fugit atque vitae cupiditate ipsa eos a ipsam quia, minus amet voluptates voluptatum earum officia asperiores optio, consequuntur cum sit!</p>
+            <p className='text-secondary' style={{textAlign:'justify'}}>Unipix University is a modern institution built on the idea that education should be practical, industry-aligned, and globally relevant. Our programs are designed to equip students with real-world skills, hands-on experience, and strong professional foundations that prepare them for the challenges of a rapidly evolving world.</p>
+            <p className='text-secondary' style={{textAlign:'justify'}}>We combine academic excellence with innovation offering advanced labs, experienced faculty, and a collaborative learning culture that encourages creativity, research, and personal growth. At Unipix University, students don’t just study; they build careers, explore new ideas, and become part of a community focused on impact and progress.</p>
             <div className='d-flex gap-5'>
               <Link to={'/about'}>
-                <button className='btn rounded-0 p-3' style={{ border: 'solid 2px rgba(162, 2, 34, 1)', color: 'rgba(162, 2, 34, 1)' }}> <i class="fa-solid fa-people-roof"></i> University Mission Statement</button></Link>
-              <Link to={'/about'}><button className='btn rounded-0 p-3' style={{ border: 'solid 2px rgba(162, 2, 34, 1)', color: 'rgba(162, 2, 34, 1)' }}> <i class="fa-solid fa-school"></i> University Vision Achievement</button></Link>
+                <button className='btn rounded-0 p-md-3' style={{ border: 'solid 2px rgba(162, 2, 34, 1)', color: 'rgba(162, 2, 34, 1)' }}> <i class="fa-solid fa-people-roof"></i> University Mission Statement</button></Link>
+              <Link to={'/about'}><button className='btn rounded-0 p-md-3' style={{ border: 'solid 2px rgba(162, 2, 34, 1)', color: 'rgba(162, 2, 34, 1)' }}> <i class="fa-solid fa-school"></i> University Vision Achievement</button></Link>
             </div>
             ,<Link to={'/courses'}><button className='btn text-light py-2 px-3 rounded-0 mt-4' style={{ backgroundColor: 'rgba(162, 2, 34, 1)' }}>View Our Program <i className='fa-solid fa-arrow-right'></i></button></Link>
           </div>
@@ -120,7 +120,7 @@ const Home = () => {
 
         {/* Third Section */}
         <div className='d-flex justify-content-center mt-5 pt-sm-5'>
-          <div className='w-75 d-flex justify-content-around p-4 ' style={{ backgroundColor: 'rgba(162, 2, 34, 1)' }}>
+          <div className=' d-flex justify-content-around p-4 third-section' style={{ backgroundColor: 'rgba(162, 2, 34, 1)',width:'75%' }}>
             <div className='text-light'>
               <h1>90%</h1>
               <h6>Post-Graduation Success <br /> Rate</h6>
@@ -144,7 +144,7 @@ const Home = () => {
           <div className='d-flex justify-content-center'>
             <div className='row ' style={{ backgroundColor: 'whitesmoke', width: '85%' }}>
               <div className="col-md-4 py-5 px-5">
-                <h2>Undergraduate</h2>
+                <h2 className='text-center'>Undergraduate</h2>
                 <div className='d-flex flex-column gap-2'>
                   <button className='btn rounded-0 p-2 fs-5' style={{ border: 'solid 2px rgba(171, 161, 161, 0.5)', fontWeight: '500' }}>American Literature</button>
                   <button className='btn rounded-0 p-2 fs-5' style={{ border: 'solid 2px rgba(171, 161, 161, 0.5)', fontWeight: '500' }}>Creative Writing</button>
