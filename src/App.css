@@ -24,4 +24,25 @@
   .contact-input{
     width: 70% !important;
   }
+   .mainCaption{
+    font-size: 25px !important;
+  }
+  .mainCaption2{
+    font-size: 15px !important;
+  }
+  .disCaption{
+    font-size: 12px !important;
+  }
+  .contents{
+    font-size: 13px !important;
+  }
+  .contents2{
+    font-size: 11px !important;
+  }
+  .headings{
+    font-size: 20px !important;
+  }
+  .displayNone{
+    display: none;
+  }
 }

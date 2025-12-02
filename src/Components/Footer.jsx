@@ -13,30 +13,30 @@ const Footer = () => {
         {/* Unipix Section   */}
         <div className='col-md-5 px-3 px-sm-0'>
            <Link className='text-decoration-none text-light' to={'/'}>
-            <i style={{fontSize:'30px', fontWeight:'600'}} className="fa-solid fa-building-columns"></i>
-            <span className='ms-3' style={{fontSize:'30px', fontWeight:'600'}}>UNIPIX <span style={{fontSize:'20px'}}>UNIVERSITY</span></span>
+            <i style={{fontSize:'30px', fontWeight:'600'}} className="fa-solid fa-building-columns headings"></i>
+            <span className='ms-3 headings' style={{fontSize:'30px', fontWeight:'600'}}>UNIPIX <span className='contents' style={{fontSize:'20px'}}>UNIVERSITY</span></span>
            </Link> <br /> <br />
-            <p className='text-secondary m-0' style={{textAlign:'justify'}}>Our university is dedicated to fostering academic excellence, innovative research, and a learning environment that empowers every student to reach their highest potential.</p>
-            <p className='text-secondary' style={{textAlign:'justify'}}>We strive to cultivate a vibrant community where knowledge, integrity, and creativity come together to prepare learners for meaningful careers and impactful contributions to society.</p>
+            <p className='text-secondary m-0 contents2' style={{textAlign:'justify'}}>Our university is dedicated to fostering academic excellence, innovative research, and a learning environment that empowers every student to reach their highest potential.</p>
+            <p className='text-secondary contents2' style={{textAlign:'justify'}}>We strive to cultivate a vibrant community where knowledge, integrity, and creativity come together to prepare learners for meaningful careers and impactful contributions to society.</p>
         </div>
 
         {/* Links Section */}
         <div className='col-md-1 mt-3 px-3 px-sm-0 text-light'>
-            <h5 className='fw-bold'>Links</h5>
-            <Link className='text-secondary' style={{textDecoration:'none'}} to={'/'}>Home</Link> <br />
-            <Link className='text-secondary' style={{textDecoration:'none'}} to={'/courses'}>Academics</Link> <br />
-            <Link className='text-secondary' style={{textDecoration:'none'}} to={'/about'}>About Us</Link>
+            <h5 className='fw-bold contents'>Links</h5>
+            <Link className='text-secondary contents2' style={{textDecoration:'none'}} to={'/'}>Home</Link> <br />
+            <Link className='text-secondary contents2' style={{textDecoration:'none'}} to={'/courses'}>Academics</Link> <br />
+            <Link className='text-secondary contents2' style={{textDecoration:'none'}} to={'/about'}>About Us</Link>
         </div>
 
         {/* Know More Section */}
         <div className='col-md-1 mt-3 px-3 px-sm-0'>
-            <h5 className='fw-bold text-light'>Know More</h5>
-            <Link className='text-secondary' style={{textDecoration:'none'}} to={'/'}>Privacy Policy</Link> <br />
-            <Link className='text-secondary' style={{textDecoration:'none'}} to={'/contact'}>Contact Us</Link>
+            <h5 className='fw-bold text-light contents'>Know More</h5>
+            <Link className='text-secondary contents2' style={{textDecoration:'none'}} to={'/'}>Privacy Policy</Link> <br />
+            <Link className='text-secondary contents2' style={{textDecoration:'none'}} to={'/contact'}>Contact Us</Link>
         </div>
     </div>
     
-    <p className='text-center w-100 p-0 m-0 text-secondary mt-2'>Copyright &copy; 2025 <strong>Raynott</strong> | Designed by <strong>Asish</strong></p>
+    <p className='text-center w-100 p-0 m-0 text-secondary mt-2 contents2 py-2'>Copyright &copy; 2025 <strong>Raynott</strong> | Designed by <strong>Asish</strong></p>
     </div>
     </>
   )
